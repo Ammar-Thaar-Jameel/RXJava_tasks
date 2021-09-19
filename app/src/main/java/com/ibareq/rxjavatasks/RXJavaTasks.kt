@@ -21,6 +21,7 @@ object RXJavaTasks {
         return Observable.fromIterable(mList)
             .zipWith(Observable.interval(1, TimeUnit.SECONDS), {item, _ ->
                 item.toString() })
+
     }
 
     /**
